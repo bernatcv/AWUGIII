@@ -1,7 +1,7 @@
 MIEMBROS GRUPO:
 
--Laura Morales
--Oriol Fernandez
--Eduardo Usero
--Bernat Castells
--Nacho Vilchez
+-Laura Morales<br>
+-Oriol Fernandez<br>
+-Eduardo Usero<br>
+-Bernat Castells<br>
+-Nacho Vilchez<br>
