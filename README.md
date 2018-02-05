@@ -1,7 +1,11 @@
-MIEMBROS GRUPO:
+<h1>PROYECTO AWUGIII:</h1><br>
 
--Laura Morales<br>
--Oriol Fernandez<br>
--Eduardo Usero<br>
--Bernat Castells<br>
--Nacho Vilchez<br>
+<h2>MIEMBROS GRUPO:</h2>
+
+<ul>
+<li>Laura Morales</li>
+<li>Oriol Fernandez</li>
+<li>Eduardo Usero</li>
+<li>Bernat Castells</li>
+<li>Nacho Vilchez</li>
+</ul>
