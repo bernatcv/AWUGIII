@@ -8,4 +8,5 @@
 <li>Eduardo Usero</li>
 <li>Bernat Castells</li>
 <li>Nacho Vilchez</li>
+<li>Vittorio</li>
 </ul>
