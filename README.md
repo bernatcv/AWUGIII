@@ -19,6 +19,6 @@
         -Dudas: Registro de usuario a partir de red social (instagram) para compartir posteriormente la imagen del recorrido.
     </li>
       <li>
-    <img src="http://citmalumnes.upc.es/~oriolfr1/Mock%20Up.png" alt="Mockup">
+   
     </li>
     </ol>
