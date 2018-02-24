@@ -21,8 +21,9 @@
         <p>
             Dudas: Registro de usuario a partir de red social (instagram) para compartir posteriormente la imagen del recorrido.
         </p>
-    <br>
 </blockquote>
+  <br>
+  <br>
 <blockquote class="justify">
      <h3>2. </h3>
          <p>
