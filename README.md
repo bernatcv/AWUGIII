@@ -21,6 +21,7 @@
         <p>
             Dudas: Registro de usuario a partir de red social (instagram) para compartir posteriormente la imagen del recorrido.
         </p>
+    <br>
 </blockquote>
 <blockquote class="justify">
      <h3>2. </h3>
@@ -30,6 +31,7 @@
          <p>
             El usuario podrá seguir a sus grupos favoritos, para poder ver en un google maps, sus próximos conciertos y compartirlos en sus redes sociales ("esta opción también la tendran los grupos").
         </p>
+    <br>
     <blockquote>
         <h3>Mockup</h3>
         <img src="http://citmalumnes.upc.es/~oriolfr1/Mock%20Up.png" alt="Mockup" width="100%" height="100%">
