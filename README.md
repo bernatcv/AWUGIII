@@ -18,7 +18,7 @@
     <li><p class="justify">App para buscar recorridos de trenes de un punto A a un punto B dentro de Cataluña. La app proporcionaría las opciones disponibles que RENFE ofrece para ese recorrido determinado. Cada opción te envia a la web de RENFE para comprar dicho trayecto. Tambín aparecerian las imagenes de street veiw de cada una de las estaciones de origen y destino. (google Maps API). La app  se caracterizaría en que el usuario puede compartir su trayecto en alguna red social (instagram)<br>
         -Dudas: Registro de usuario a partir de red social (instagram) para compartir posteriormente la imagen del recorrido.</p>
     </li>
-    <hr class="title"><br>
+    <hr><br>
     <li>
         <p class="justify">
              Una App para grupos de música y usuarios. Los grupos de música, podrán utilizarla para colgar sus próximos conciertos, mediante un formulario, donde se marcaran en un maps de google, para poder ver su ruta de conciertos de cada año. 
