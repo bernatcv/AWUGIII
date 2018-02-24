@@ -27,6 +27,7 @@
              El usuario podrá seguir a sus grupos favoritos, para poder ver en un google maps, sus próximos conciertos y compartirlos en sus redes sociales ("esta opción también la tendran los grupos").
         </p>
         <h3>Mockup:</h3>
-        <img src="http://citmalumnes.upc.es/~oriolfr1/Mock%20Up.png" alt="Mockup" width="100%" height="100%">
+        ![Mockup](http://citmalumnes.upc.es/~oriolfr1/Mock%20Up.png)
+       <!-- <img src="http://citmalumnes.upc.es/~oriolfr1/Mock%20Up.png" alt="Mockup" width="100%" height="100%">-->
     </li>
 </ol>
