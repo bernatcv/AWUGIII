@@ -32,6 +32,7 @@
          <p align="justify">
             El usuario podrá seguir a sus grupos favoritos, para poder ver en un google maps, sus próximos conciertos y compartirlos en sus redes sociales ("esta opción también la tendran los grupos").
         </p>
+    <br>
     <blockquote>
         <h4>Apis necessárias</h4>
             <ol>
@@ -43,6 +44,7 @@
                 </li>
              </ol>
     </blockquote>
+    <br>
     <blockquote>
         <h4>Bases de datos necessárias</h4>
             <ol>
