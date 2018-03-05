@@ -33,7 +33,7 @@
             El usuario podrá seguir a sus grupos favoritos, para poder ver en un google maps, sus próximos conciertos y compartirlos en sus redes sociales ("esta opción también la tendran los grupos").
         </p>
     <blockquote>
-        <h4>Apis necessàrias</h4>
+        <h4>Apis necessárias</h4>
             <ol>
                 <li>
                     Google Maps
@@ -43,6 +43,21 @@
                 </li>
              </ol>
     </blockquote>
+    <blockquote>
+        <h4>Bases de datos necessárias</h4>
+            <ol>
+                <li>
+                    Ingreso usurio // Ingreso Grupos
+                </li>
+                <li>
+                    Puntos del mapa donde se haran los conciertos
+                </li>
+                <li>
+                    Grupos a los que el usuario sigue
+                </li>
+            </ol>
+    </blockquote>
+    <br>
     <blockquote>
         <h4>User flow:</h4>
         <img src="http://citmalumnes.upc.es/~oriolfr1/Mock%20Up" alt="Mockup" width="100%" height="100%">
