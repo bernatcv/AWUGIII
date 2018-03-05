@@ -32,7 +32,7 @@
          <p>
             El usuario podrá seguir a sus grupos favoritos, para poder ver en un google maps, sus próximos conciertos y compartirlos en sus redes sociales ("esta opción también la tendran los grupos").
         </p>
-        <h4>Mockup</h4>
+        <h4>User flow:</h4>
         <img src="http://citmalumnes.upc.es/~oriolfr1/Mock%20Up" alt="Mockup" width="100%" height="100%">
 </blockquote>
 
