@@ -15,7 +15,7 @@
 <h2>IDEAS</h2>
 <blockquote> 
     <h3>1. </h3>
-        <p class="justify">
+        <p align="justify">
             App para buscar recorridos de trenes de un punto A a un punto B dentro de Cataluña. La app proporcionaría las opciones disponibles que RENFE ofrece para ese recorrido determinado. Cada opción te envia a la web de RENFE para comprar dicho trayecto. Tambín aparecerian las imagenes de street veiw de cada una de las estaciones de origen y destino. (google Maps API). La app  se caracterizaría en que el usuario puede compartir su trayecto en alguna red social (instagram)
         </p>
         <p>
@@ -26,10 +26,10 @@
   <br>
 <blockquote >
      <h3>2. </h3>
-         <p class="justify">
+         <p align="justify">
             Una App para grupos de música y usuarios. Los grupos de música, podrán utilizarla para colgar sus próximos conciertos, mediante un formulario, donde se marcaran en un maps de google, para poder ver su ruta de conciertos de cada año.
          </p>
-         <p class="justify">
+         <p align="justify">
             El usuario podrá seguir a sus grupos favoritos, para poder ver en un google maps, sus próximos conciertos y compartirlos en sus redes sociales ("esta opción también la tendran los grupos").
         </p>
         <h4>User flow:</h4>
