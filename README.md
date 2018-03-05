@@ -38,6 +38,9 @@
                 <li>
                     Google Maps
                 </li>
+                <li>
+                    Instagram // Redes soaciales
+                </li>
              </ol>
     </blockquote>
     <blockquote>
