@@ -45,22 +45,6 @@ const UserProfileTemplate = {props: [],
 <div id="card_event">
 		
 			<h2>PRÓXIMOS EVENTOS</h2>
-			<div>
-				
-				<md-dialog :md-active.sync="showDialog">
-				  <md-dialog-title>Preferences</md-dialog-title>
-
-				  <h2> TE AMO </h2>
-
-				  <md-dialog-actions>
-					<md-button class="md-primary" @click="showDialog = false">Close</md-button>
-					<md-button class="md-primary" @click="showDialog = false">Save</md-button>
-				  </md-dialog-actions>
-				</md-dialog>
-
-				<md-button class="md-primary md-raised" @click="showDialog = true">Show Dialog</md-button>
-			  </div>
-			
 
 				<md-speed-dial-target @click="goToSettings()">
 							<md-icon class="md-size-1x">add</md-icon>
