@@ -1,62 +1,138 @@
 
 const SimpleListTemplate = {props: [], 
-                          data: () => ({
-        radio: false,
-        active: false,
-        value: null,
-        primary: [
-                  'Orange',
-                  'Apple',
-                  'Pineapple'
-                ],
-        accent: [
-                  'Cat',
-                  'Dog',
-                  'Rabbit'
-                ]
-    }),
-        methods: {
-              onConfirm () {
-                this.value = 'Agreed'
-              },
-              onCancel () {
-                this.value = 'Disagreed'
-              }
-        },
+                         
         template:`
 <div>
    
-    
-
-        <md-list-item>
+   <md-list-item>
 			<md-avatar class="md-large">
-			  <img src="img/user1.jpg" alt="People">
+			  <img src="img/acdc.jpg" alt="People">
 			</md-avatar>
 
-			<span class="md-list-item-text">Alex Nelson</span>
+			<span class="md-list-item-text">AC/DC ha creado un nuevo <strong>evento</strong></span>
 
 			<md-button class="md-icon-button md-list-action">
-			  <md-icon class="md-primary">chat_bubble</md-icon>
+			  <md-icon class="md-primary">favorite</md-icon>
 			</md-button>
 		
 
       	</md-list-item>
-		<p class="band_Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+<div style="margin:0 5% 0 5%;">
+		<md-card>
+      <md-card-header>
+        <md-card-header-text>
+          <div class="md-title">Concierto en Terrassa</div>
+          <div class="md-subhead">21/06/2016</div>
+        </md-card-header-text>
 
- <md-list-item>
+      </md-card-header>
+
+      <md-card-content>
+        Carrer de la Igualtat, 33, 08222 Terrassa, Barcelona
+      </md-card-content>
+
+    </md-card>
+<br><br>
+</div>
+
+<div>
+   
+   <md-list-item>
 			<md-avatar class="md-large">
-			  <img src="img/user1.jpg" alt="People">
+			  <img src="img/acdc.jpg" alt="People">
 			</md-avatar>
 
-			<span class="md-list-item-text">Alex Nelson</span>
+			<span class="md-list-item-text">AC/DC ha creado un nuevo <strong>evento</strong></span>
 
 			<md-button class="md-icon-button md-list-action">
-			  <md-icon class="md-primary">chat_bubble</md-icon>
+			  <md-icon class="md-primary">favorite</md-icon>
 			</md-button>
 		
 
       	</md-list-item>
-		<p class="band_Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+<div style="margin:0 5% 0 5%;">
+		<md-card>
+      <md-card-header>
+        <md-card-header-text>
+          <div class="md-title">Concierto en Terrassa</div>
+          <div class="md-subhead">21/06/2016</div>
+        </md-card-header-text>
+
+      </md-card-header>
+
+      <md-card-content>
+        Carrer de la Igualtat, 33, 08222 Terrassa, Barcelona
+      </md-card-content>
+
+    </md-card>
+<br><br>
+</div>
+
+<div>
+   
+   <md-list-item>
+			<md-avatar class="md-large">
+			  <img src="img/acdc.jpg" alt="People">
+			</md-avatar>
+
+			<span class="md-list-item-text">AC/DC ha creado un nuevo <strong>evento</strong></span>
+
+			<md-button class="md-icon-button md-list-action">
+			  <md-icon class="md-primary">favorite</md-icon>
+			</md-button>
+		
+
+      	</md-list-item>
+<div style="margin:0 5% 0 5%;">
+		<md-card>
+      <md-card-header>
+        <md-card-header-text>
+          <div class="md-title">Concierto en Terrassa</div>
+          <div class="md-subhead">21/06/2016</div>
+        </md-card-header-text>
+
+      </md-card-header>
+
+      <md-card-content>
+        Carrer de la Igualtat, 33, 08222 Terrassa, Barcelona
+      </md-card-content>
+
+    </md-card>
+<br><br>
+</div>
+
+<div>
+   
+   <md-list-item>
+			<md-avatar class="md-large">
+			  <img src="img/acdc.jpg" alt="People">
+			</md-avatar>
+
+			<span class="md-list-item-text">AC/DC ha creado un nuevo <strong>evento</strong></span>
+
+			<md-button class="md-icon-button md-list-action">
+			  <md-icon class="md-primary">favorite</md-icon>
+			</md-button>
+		
+
+      	</md-list-item>
+<div style="margin:0 5% 0 5%;">
+		<md-card>
+      <md-card-header>
+        <md-card-header-text>
+          <div class="md-title">Concierto en Terrassa</div>
+          <div class="md-subhead">21/06/2016</div>
+        </md-card-header-text>
+
+      </md-card-header>
+
+      <md-card-content>
+        Carrer de la Igualtat, 33, 08222 Terrassa, Barcelona
+      </md-card-content>
+
+    </md-card>
+<br><br>
+</div>
 
 
         

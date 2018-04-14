@@ -24,18 +24,50 @@
 
   <body onload="init()">
     
-    <div id="app">
-		<div class="yAlign">
-			<div style="text-align: center; margin-bottom:2%">
-				<img src="img/logo_iniciosesion.png" width="33%">
-			</div>
+       <div id="app">
 
-			<div style="text-align: center;">
-				<md-button class="md-raised md-primary" style="width:50%;" onclick="location.href='userLogin.html';">Entrar como usuario</md-button><br>
-				<md-button class="md-raised md-primary" style="width:50%;" onclick="location.href='bandLogin.html';">Entrar como banda</md-button>
-			</div>
+  <div class="yAlign">
+		
+		<div style="text-align: center; margin-bottom:2%">
+		<img src="img/logo_iniciosesion.png" width="33%">
 	  </div>
+  
+        <div style="text-align: center;">
+        
+        	<div style="width:80%; margin: 0 10%;">
+        		<md-field>
+				  <label>Usuario o correo electrónico</label>
+				  <md-input v-model="required" required></md-input>
+				 
+				</md-field>
+				<md-field>
+				  <label>Password </label>
+				  <md-input v-model="password" type="password" required></md-input>
+				</md-field>
+        	</div>
+        	
+        	
+			<md-button class="md-raised md-primary" style="width:80%;" onclick="location.href='home.html';">Entrar</md-button><br>
+			
+		</div>
+       
+       
+       <div>
+		<div class="botton">
+		 
+
+				<a href="bandRegistration.html" style="margin: 10px auto;">
+					<p>¿Tienes una banda y no tenéis cuenta? <strong>Registráos</strong>.</p>
+				</a>
+
+
+		 
+		</div>
+	  </div>
+       
 	</div>
+
+</div>
 		<script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 		
@@ -51,14 +83,3 @@
 		
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-

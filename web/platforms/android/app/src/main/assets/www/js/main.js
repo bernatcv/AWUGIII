@@ -20,8 +20,11 @@ function init(){
     
     const routes = [
                 //{path: '/inbox', name: 'inbox', component: MailListTemplate},
-            {path: '/settings', name: 'settings',  component: SettingsTemplate}
-            ,{path: '/simplelist', name: 'simplelist', component: SimpleListTemplate}
+            {path: '/simplelist', name: 'simplelist', component: SimpleListTemplate}
+			,{path: '/settings', name: 'settings',  component: SettingsTemplate}
+		 	,{path: '/userprofile', name: 'userprofile', component: UserProfileTemplate}
+			,{path: '/editprofile', name: 'editprofile', component: EditProfileTemplate}
+			,{path: '/newevent', name: 'newevent', component: NewEventTemplate}
             ];
 
         const router = new VueRouter({
@@ -35,21 +38,36 @@ function init(){
                 showSidepanel: false,
               message: 'Hola!'},
         methods: {
-            goToInbox: function(){
+            goToEditProfile: function(){
                 this.showNavigation = false;
                     //this.$refs.sidebar.toggle();
-                    router.push('inbox');
+                    router.push('editprofile');
                 },
-            goToSettings: function(){
-                this.showNavigation = false;
-                    //this.$refs.sidebar.toggle();
-                    router.push({ name: 'settings'})
-                },
+           
             goToSimpleList: function(){
                 this.showNavigation = false;
                     //this.$refs.sidebar.toggle();
                     router.push('simplelist');
+                }, 
+			
+			goToSettings: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push({ name: 'settings'})
+                },
+			
+			goToNewEvent: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push({ name: 'newevent'})
+                },
+			
+			goToUserProfile: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push('userprofile');
                 }
+			
         }
             
       }).$mount('#app');
@@ -57,6 +75,9 @@ function init(){
     //router.push('settings');
     router.push({ name: 'settings'})
 }
+
+
+
 
         
 

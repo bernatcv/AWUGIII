@@ -1,36 +1,19 @@
 const SettingsTemplate = {props: [], 
-                          data: () => ({
-        radio: false,
-        active: false,
-        value: null,
-        primary: [
-                  'Orange',
-                  'Apple',
-                  'Pineapple'
-                ],
-        accent: [
-                  'Cat',
-                  'Dog',
-                  'Rabbit'
-                ]
-    }),
-        methods: {
-              onConfirm () {
-                this.value = 'Agreed'
-              },
-              onCancel () {
-                this.value = 'Disagreed'
-              }
-        },
+                          
         template:`
-
-
-
 <div>
-    <md-list class="md-triple-line">
+ <md-list class="md-triple-line"><md-field md-inline>
+      <label>Inline</label>
+      <md-input v-model="inline"></md-input>
+			<md-button class="md-icon-button md-list-action">
+          		<md-icon class="md-primary">search</md-icon>
+        	</md-button>
+    </md-field>
+
+    
       <md-list-item>
         <md-avatar>
-          <img src=img/user1.jpg" alt="People">
+          <img src="img/user1.jpg" alt="People">
         </md-avatar>
 
         <div class="md-list-item-text">
