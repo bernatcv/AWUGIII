@@ -1,4 +1,6 @@
 const SettingsTemplate = {props: [], 
+						  
+						  
                           
         template:`
 <div>

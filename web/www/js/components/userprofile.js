@@ -1,6 +1,14 @@
 
 
-const UserProfileTemplate = {props: [],           
+const UserProfileTemplate = {props: [],    
+							 data: () => ({
+    cities: [
+      'New York',
+      'Amsterdam',
+      'Tokyo',
+      'Rome'
+    ]
+  }),
         template:`
 
 <div>

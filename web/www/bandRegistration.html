@@ -15,6 +15,23 @@
  
 	<script src="js/components/mail_list.js"></script>
     <script src="js/components/mail_item.js"></script>
+	  
+	  <script>
+  Vue.use(VueMaterial.default)
+
+var example = {
+  name: "Editable",
+  data: function data() {
+    return {
+      fruits: ["Orange", "Apple", "Pineapple"]
+    }
+  }
+}
+
+var app = new Vue(example)
+
+app.$mount("#app")
+</script>
     
 
 
@@ -43,9 +60,9 @@
 			  <label>Descripción de la banda</label>
 			  <md-textarea v-model="textarea"></md-textarea>
 			</md-field>
-      		<md-chips style="margin-bottom: 5px" class="md-primary" v-model="chips" md-placeholder="Añadir género musical...">
-      				
-   			</md-chips>
+				<div>
+				<md-chips v-model="fruits" md-placeholder="Add fruit..."></md-chips>
+				 </div>
        		<md-field style="margin-bottom: 5px">
 			  <label>Imagen del grupo</label>
 			  <md-file v-model="single" accept="image/*" />

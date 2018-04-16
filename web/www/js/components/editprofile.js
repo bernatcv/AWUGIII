@@ -1,4 +1,11 @@
-const EditProfileTemplate = {props: [], 
+const EditProfileTemplate = {props: [],
+							 data: () => ({
+    fruits: [
+      'Orange',
+      'Apple',
+      'Pineapple'
+    ]
+  }),
                           
         template:`
 <div id="app">
@@ -20,7 +27,7 @@ const EditProfileTemplate = {props: [],
 			  <label>Descripción de la banda</label>
 			  <md-textarea v-model="textarea"></md-textarea>
 			</md-field>
-      		<md-chips style="margin-bottom: 5px" class="md-primary" v-model="chips" md-placeholder="Añadir género musical...">
+      		<md-chips style="margin-bottom: 5px" class="md-primary" v-model="fruits" md-placeholder="Añadir género musical...">
       				
    			</md-chips>
        		<md-field style="margin-bottom: 5px">
