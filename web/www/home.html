@@ -22,71 +22,19 @@
       
   </head>
 
-  <body onload="init()">
-    
-       <div id="app">
+  <body onload="init();">
+      <div id="app">
+			<main class="main-content"> <!-- aqui el router inyecta las paginas-->
+				<div>
+					<router-view>
+					<!-- CONTENIDO DE LA PÁGINA -->
+						
+					</router-view>
+				</div>
 
-  <div>
-
-   <md-toolbar class="md-primary"> <!-- inicio toolbar de la app-->
-           
-            
-            <div id="logo">
-                <img src="img/logo.png" style="flex: 1">
-            </div>  
-        
-         <md-button class="md-icon-button" @click="showNavigation = true">
-                <md-icon>more_vert</md-icon>
-            </md-button>
-              
-</md-toolbar>
-              <md-drawer class="md-right" :md-active.sync="showNavigation" ref="sidebar"> <!-- inicio panel lateral-->
-              <md-toolbar class="md-primary" md-elevation="0">
-                <span class="md-title">Ajustes</span>
-              </md-toolbar>
-
-              <md-list>
-                <md-list-item @click="goToEditProfile()">
-                  <md-icon>edit</md-icon>
-                  <span class="md-list-item-text">Editar perfil</span>
-                </md-list-item>
-
-                <md-list-item>
-                  <a href="index.html"> 
-					  <md-icon>keyboard_return</md-icon>
-					  <span class="md-list-item-text">Cerrar sesión</span>
-                  </a>
-                  
-                </md-list-item>
-
-              </md-list>
-        </md-drawer> <!-- fin panel lateral-->
-            
-            
- 
-       
-       
-        
-        
-        <main class="main-content"> <!-- aqui el router inyecta las paginas-->
-                       <div>
-                          <router-view></router-view>
-                        </div>
-                      
-        </main>
-        
-        
-  <div class="phone-viewport">
-      <md-bottom-bar md-sync-route>
-        <md-bottom-bar-item to="/components/bottom-bar/home.html" md-icon="home" @click="goToSimpleList()"></md-bottom-bar-item>
-        <md-bottom-bar-item to="/components/bottom-bar/posts" md-icon="search" @click="goToSettings()"></md-bottom-bar-item>
-        <md-bottom-bar-item to="/components/bottom-bar/favorites" md-icon="person" @click="goToUserProfile()"></md-bottom-bar-item>
-      
-      </md-bottom-bar>
-    </div>
-  </div>
-
-</div>
+			</main>	   
+		   
+	</div>
 		<script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 		
@@ -98,6 +46,9 @@
 		<script src="js/components/userprofile.js"></script>
 		<script src="js/components/editprofile.js"></script>
 		<script src="js/components/newevent.js"></script>
+	  <script src="js/components/indice.js"></script>
+	  <script src="js/components/userLogin.js"></script>
+	  <script src="js/components/bandLogin.js"></script>
 		<script src="js/main.js"></script>
 		
   </body>
