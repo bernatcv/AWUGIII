@@ -1,5 +1,12 @@
 const IndiceTemplate = {props: [], 
-						  
+		methods: {
+            goToUserLogin(){
+                this.$router.push('userLogin');
+            },
+            goToBandLogin(){
+                 this.$router.push('bandLogin');
+                }
+        },				  
 						  
                           
         template:`
@@ -10,8 +17,8 @@ const IndiceTemplate = {props: [],
 			</div>
 
 			<div style="text-align: center;">
-				<md-button class="md-raised md-primary" style="width:50%;" onclick="location.href='userLogin.html';">Entrar como usuario</md-button><br>
-				<md-button class="md-raised md-primary" style="width:50%;" onclick="location.href='bandLogin.html';">Entrar como banda</md-button>
+				<md-button class="md-raised md-primary" style="width:50%;" v-on:click="goToUserLogin()">Entrar como usuario</md-button><br>
+				<md-button class="md-raised md-primary" style="width:50%;" v-on:click="goToBandLogin()">Entrar como banda</md-button>
 			</div>
 	  </div>
 

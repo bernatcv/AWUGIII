@@ -1,4 +1,12 @@
 const userLoginTemplate = {props: [], 
+        methods: {
+            goToUserRegistration(){
+                this.$router.push('userRegistration');
+            },
+            goToSimpleList(){
+                 this.$router.push('bandLogin');
+                }
+        },
 						  
 						  
                           
@@ -24,7 +32,7 @@ const userLoginTemplate = {props: [],
         	</div>
         	
         	
-			<md-button class="md-raised md-primary" style="width:80%;" onclick="location.href='home.html';">Entrar</md-button><br>
+			<md-button class="md-raised md-primary" style="width:80%;" v-on:click="goToSimpleList()">Entrar</md-button><br>
 			
 		</div>
        
@@ -33,7 +41,7 @@ const userLoginTemplate = {props: [],
 		<div class="botton">
 		 
 
-				<a href="userRegistration.html" style="margin: 10px auto;">
+				<a v-on:click="goToUserRegistration()" style="margin: 10px auto;">
 					<p>¿No tienes una cuenta? <strong>Regístrate</strong>.</p>
 				</a>
 

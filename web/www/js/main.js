@@ -28,6 +28,8 @@ function init(){
 			,{path: '/indice', name: 'indice', component: IndiceTemplate }
 			,{path: '/userLogin', name: 'userLogin', component: userLoginTemplate }
 			,{path: '/bandLogin', name: 'bandLogin', component: bandLoginTemplate }
+            ,{path: '/userRegistration', name: 'userRegistration', component: userRegistrationTemplate }
+            ,{path: '/bandRegistration', name: 'bandRegistration', component: bandRegistrationTemplate }
             ];
 
         const router = new VueRouter({
@@ -78,12 +80,22 @@ function init(){
 			goToUserLogin: function(){
                 this.showNavigation = false;
                     //this.$refs.sidebar.toggle();
-                    router.push('indice');
+                    router.push('userLogin');
                 },
 			goToBandLogin: function(){
                 this.showNavigation = false;
                     //this.$refs.sidebar.toggle();
-                    router.push('indice');
+                    router.push('bandLogin');
+                },
+            goToUserRegistration: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push('userRegistration');
+                },
+			goToBandRegistration: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push('bandRegistration');
                 }
 			
         }
