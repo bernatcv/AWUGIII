@@ -10926,6 +10926,8 @@ Vue.prototype.$mount = function (
   return mount.call(this, el, hydrating)
 };
 
+					  
+					  
 /**
  * Get outerHTML of elements, taking care
  * of SVG elements in IE as well.
@@ -10945,3 +10947,5 @@ Vue.compile = compileToFunctions;
 return Vue;
 
 })));
+
+

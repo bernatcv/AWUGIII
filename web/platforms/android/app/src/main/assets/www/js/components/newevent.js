@@ -1,60 +1,71 @@
 
 const NewEventTemplate = {props: [], 
-                         
+           methods: {
+            goToSimpleList(){
+                this.$router.push('simplelist');
+            },
+            goToEditProfile(){
+                 this.$router.push('editprofile');
+                },
+			goToSettings(){
+                 this.$router.push('settings');
+                },
+			goToUserProfile(){
+                 this.$router.push('userprofile');
+                },
+			   
+			goToIndice(){
+                 this.$router.push('indice');
+                }
+        },	                
         template:`
-<div id="app">
-
-  <div style="margin-top: 5%">
+<div>
 		
-		<div style="text-align: center; margin-bottom:2%">
-		<img src="img/logo_iniciosesion.png" width="33%">
-	  </div>
+		<md-toolbar class="md-primary"> <!-- inicio toolbar de la app-->
+           
+            
+             
+        
+         <md-button class="md-icon-button" v-on:click="goToUserProfile()">
+                <md-icon>chevron_left</md-icon>
+                
+            </md-button>
+              
+</md-toolbar>
   
         <div style="text-align: center;">
-        <h2>Perfil de usuario</h2>
+        <h2>Nuevo evento</h2>
         	<div style="width:80%; margin: 0 10%;">
         		<md-field style="margin-bottom: 5px">
-				  <label>Nombre del grupo</label>
+				  <label>Nombre del evento</label>
 				  <md-input v-model="required" required></md-input>
 				</md-field>
       		<md-field style="margin-bottom: 5px">
-			  <label>Descripción de la banda</label>
+			  <label>Descripción del evento</label>
 			  <md-textarea v-model="textarea"></md-textarea>
 			</md-field>
-      		<md-chips style="margin-bottom: 5px" class="md-primary" v-model="chips" md-placeholder="Añadir género musical...">
-      				
-   			</md-chips>
-       		<md-field style="margin-bottom: 5px">
-			  <label>Imagen del grupo</label>
-			  <md-file v-model="single" accept="image/*" />
-			</md-field>
-       		
+      		
+			<md-datepicker v-model="selectedDate" style="margin-bottom: 5px">
+			  <label></label>
+			</md-datepicker>
+
         		<md-field style="margin-bottom: 5px">
-				  <label>Correo electrónico</label>
-				  <md-input v-model="required" required></md-input>
+				  <label>Coordenadas del evento</label>
+				  <md-input v-model="required" required></md-input>  
 				</md-field>
 				
-				<md-field style="margin-bottom: 5px">
-				  <label>Password </label>
-				  <md-input v-model="password" type="password" required></md-input>
-				</md-field>
-       			<md-field style="margin-bottom: 20px">
-				  <label>Repetir Password </label>
-				  <md-input v-model="password" type="password" required></md-input>
-				</md-field>
+				<img src="img/mapa.JPG" width="80%" height="80%" style="margin-bottom: 20px">
+				
       			
       			
        			
         	</div>
         	
-			<md-button class="md-raised md-primary" style="width:80%;" @click="goToUserProfile()">Editar perfil</md-button><br>
+			<md-button class="md-raised md-primary" style="width:80%;" v-on:click="goToUserProfile()">Crear evento</md-button><br>
 			
 		</div>
         
 	</div>
-  
-
-</div>
 
 `
                      };

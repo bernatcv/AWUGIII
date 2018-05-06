@@ -9,6 +9,12 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.grupo5.awugIII"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.grupo5.awugIII"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.grupo5.awugIII"
     }
   },
   "dependent_plugins": {}

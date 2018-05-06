@@ -1,8 +1,54 @@
 const SettingsTemplate = {props: [], 
-						  
+			methods: {
+            goToSimpleList(){
+                this.$router.push('simplelist');
+            },
+            goToEditProfile(){
+                 this.$router.push('editprofile');
+                },
+			goToSettings(){
+                 this.$router.push('settings');
+                },
+			goToUserProfile(){
+                 this.$router.push('userprofile');
+                },
+			goToIndice(){
+                 this.$router.push('indice');
+                }
+        },	  			  
 						  
                           
         template:`
+
+<div>
+				<md-toolbar class="md-primary"> <!-- inicio toolbar de la app-->
+					<div id="logo">
+						<img src="img/logo.png" style="flex: 1">
+					</div>  
+					<md-button class="md-icon-button" v-on:click="showNavigation = true">
+						<md-icon>more_vert</md-icon>
+					</md-button>
+				</md-toolbar>
+              	<md-drawer class="md-right" :md-active.sync="showNavigation" ref="sidebar"> <!-- inicio panel lateral-->
+             	<md-toolbar class="md-primary" md-elevation="0">
+                	<span class="md-title">Ajustes</span>
+              	</md-toolbar>
+              	<md-list>
+                	<md-list-item @click="goToEditProfile()">
+                  		<md-icon>edit</md-icon>
+                  		<span class="md-list-item-text">Editar perfil</span>
+                	</md-list-item>
+                	<md-list-item>
+						<a href="index.html"> 
+							  <md-icon>keyboard_return</md-icon>
+							  <span class="md-list-item-text">Cerrar sesión</span>
+						</a>
+                	</md-list-item>
+              </md-list>
+        </md-drawer> <!-- fin panel lateral-->
+ 
+        <!-- ---------------------CONTENIDO-------------------------- -->
+
 <div>
  <md-list class="md-triple-line"><md-field md-inline>
       <label>Inline</label>
@@ -51,6 +97,18 @@ const SettingsTemplate = {props: [],
 
 </div>
 
+<!-- ----------------------FIN CONTENIDO--------------------- -->
+        
+        
+		  <div class="phone-viewport">
+			  <md-bottom-bar md-sync-route>
+				<md-bottom-bar-item md-icon="home" v-on:click="goToSimpleList()"></md-bottom-bar-item>
+				<md-bottom-bar-item md-icon="search" v-on:click="goToSettings()"></md-bottom-bar-item>
+				<md-bottom-bar-item md-icon="person" v-on:click="goToUserProfile()"></md-bottom-bar-item>
+
+			  </md-bottom-bar>
+			</div>
+		  </div>
 
 `
                      };

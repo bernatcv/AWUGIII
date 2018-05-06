@@ -25,6 +25,7 @@ function init(){
 		 	,{path: '/userprofile', name: 'userprofile', component: UserProfileTemplate}
 			,{path: '/editprofile', name: 'editprofile', component: EditProfileTemplate}
 			,{path: '/newevent', name: 'newevent', component: NewEventTemplate}
+			,{path: '/editevent', name: 'editevent', component: EditEventTemplate}
 			,{path: '/indice', name: 'indice', component: IndiceTemplate }
 			,{path: '/userLogin', name: 'userLogin', component: userLoginTemplate }
 			,{path: '/bandLogin', name: 'bandLogin', component: bandLoginTemplate }
@@ -65,6 +66,11 @@ function init(){
                 this.showNavigation = false;
                     //this.$refs.sidebar.toggle();
                     router.push({ name: 'newevent'})
+                },
+			goToEditEvent: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push({ name: 'editevent'})
                 },
 			
 			goToUserProfile: function(){

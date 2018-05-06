@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
   <head>
-   
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;font-src 'self' 'unsafe-inline' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    <meta charset="utf-8">
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;font-src 'self' 'unsafe-inline' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'">-->
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -15,53 +15,26 @@
  
 	<script src="js/components/mail_list.js"></script>
     <script src="js/components/mail_item.js"></script>
- 
     
+
+
+
       
   </head>
 
-  <body onload="init()">
-    
-       <div id="app">
+  <body onload="init();">
+      <div id="app">
+			<main class="main-content"> <!-- aqui el router inyecta las paginas-->
+				<div>
+					<router-view>
+					<!-- CONTENIDO DE LA PÁGINA -->
+						
+					</router-view>
+				</div>
 
-  <div>
-   
-   
-   <md-toolbar class="md-primary"> <!-- inicio toolbar de la app-->
-            <!-- <md-button class="md-icon-button" @click="showNavigation = true">
-                <md-icon>menu</md-icon>
-            </md-button>-->
-            
-                <h3 class="md-title" style="flex: 1">LOGO</h3>
-                
-        </md-toolbar>
-        
-        
-        <main class="main-content"> <!-- aqui el router inyecta las paginas-->
-                       <div>
-                          <router-view></router-view>
-                        </div>
-                      
-        </main>
-        
-        
-    <div class="phone-viewport">
-    
-     
-      	<md-bottom-bar md-sync-route> 
-			<md-bottom-bar-item to="/components/bottom-bar/home" md-icon="home" @click="goToSimpleList()" ></md-bottom-bar-item>
-			<md-bottom-bar-item to="/components/bottom-bar/posts" md-icon="search" @click="goToSettings()"></md-bottom-bar-item>
-			<md-bottom-bar-item to="/components/bottom-bar/favorites" md-icon="adjust" @click="goToUser()"></md-bottom-bar-item>
-      	</md-bottom-bar>
-     
-    
-     
-      
-      
-    </div>
-  </div>
-
-</div>
+			</main>	   
+		   
+	</div>
 		<script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 		
@@ -71,7 +44,16 @@
 		<script src="js/components/simple_list.js"></script>
 		<script src="js/components/settings.js"></script>
 		<script src="js/components/userprofile.js"></script>
+		<script src="js/components/editprofile.js"></script>
+		<script src="js/components/newevent.js"></script>
+		<script src="js/components/editevent.js"></script>
+	  <script src="js/components/indice.js"></script>
+	  <script src="js/components/userLogin.js"></script>
+	  <script src="js/components/bandLogin.js"></script>
+      <script src="js/components/bandRegistration.js"></script>
+	  <script src="js/components/userRegistration.js"></script>
 		<script src="js/main.js"></script>
+		
   </body>
 </html>
 

@@ -25,6 +25,12 @@ function init(){
 		 	,{path: '/userprofile', name: 'userprofile', component: UserProfileTemplate}
 			,{path: '/editprofile', name: 'editprofile', component: EditProfileTemplate}
 			,{path: '/newevent', name: 'newevent', component: NewEventTemplate}
+			,{path: '/editevent', name: 'editevent', component: EditEventTemplate}
+			,{path: '/indice', name: 'indice', component: IndiceTemplate }
+			,{path: '/userLogin', name: 'userLogin', component: userLoginTemplate }
+			,{path: '/bandLogin', name: 'bandLogin', component: bandLoginTemplate }
+            ,{path: '/userRegistration', name: 'userRegistration', component: userRegistrationTemplate }
+            ,{path: '/bandRegistration', name: 'bandRegistration', component: bandRegistrationTemplate }
             ];
 
         const router = new VueRouter({
@@ -61,11 +67,41 @@ function init(){
                     //this.$refs.sidebar.toggle();
                     router.push({ name: 'newevent'})
                 },
+			goToEditEvent: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push({ name: 'editevent'})
+                },
 			
 			goToUserProfile: function(){
                 this.showNavigation = false;
                     //this.$refs.sidebar.toggle();
                     router.push('userprofile');
+                },
+			goToIndice: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push('indice');
+                },
+			goToUserLogin: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push('userLogin');
+                },
+			goToBandLogin: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push('bandLogin');
+                },
+            goToUserRegistration: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push('userRegistration');
+                },
+			goToBandRegistration: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push('bandRegistration');
                 }
 			
         }
@@ -73,7 +109,7 @@ function init(){
       }).$mount('#app');
     
     //router.push('settings');
-    router.push({ name: 'settings'})
+    router.push({ name: 'indice'})
 }
 
 

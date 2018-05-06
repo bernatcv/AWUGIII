@@ -20,8 +20,17 @@ function init(){
     
     const routes = [
                 //{path: '/inbox', name: 'inbox', component: MailListTemplate},
-            {path: '/settings', name: 'settings',  component: SettingsTemplate}
-            ,{path: '/simplelist', name: 'simplelist', component: SimpleListTemplate}
+            {path: '/simplelist', name: 'simplelist', component: SimpleListTemplate}
+			,{path: '/settings', name: 'settings',  component: SettingsTemplate}
+		 	,{path: '/userprofile', name: 'userprofile', component: UserProfileTemplate}
+			,{path: '/editprofile', name: 'editprofile', component: EditProfileTemplate}
+			,{path: '/newevent', name: 'newevent', component: NewEventTemplate}
+			,{path: '/editevent', name: 'editevent', component: EditEventTemplate}
+			,{path: '/indice', name: 'indice', component: IndiceTemplate }
+			,{path: '/userLogin', name: 'userLogin', component: userLoginTemplate }
+			,{path: '/bandLogin', name: 'bandLogin', component: bandLoginTemplate }
+            ,{path: '/userRegistration', name: 'userRegistration', component: userRegistrationTemplate }
+            ,{path: '/bandRegistration', name: 'bandRegistration', component: bandRegistrationTemplate }
             ];
 
         const router = new VueRouter({
@@ -35,28 +44,76 @@ function init(){
                 showSidepanel: false,
               message: 'Hola!'},
         methods: {
-            goToInbox: function(){
+            goToEditProfile: function(){
                 this.showNavigation = false;
                     //this.$refs.sidebar.toggle();
-                    router.push('inbox');
+                    router.push('editprofile');
                 },
-            goToSettings: function(){
-                this.showNavigation = false;
-                    //this.$refs.sidebar.toggle();
-                    router.push({ name: 'settings'})
-                },
+           
             goToSimpleList: function(){
                 this.showNavigation = false;
                     //this.$refs.sidebar.toggle();
                     router.push('simplelist');
+                }, 
+			
+			goToSettings: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push({ name: 'settings'})
+                },
+			
+			goToNewEvent: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push({ name: 'newevent'})
+                },
+			goToEditEvent: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push({ name: 'editevent'})
+                },
+			
+			goToUserProfile: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push('userprofile');
+                },
+			goToIndice: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push('indice');
+                },
+			goToUserLogin: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push('userLogin');
+                },
+			goToBandLogin: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push('bandLogin');
+                },
+            goToUserRegistration: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push('userRegistration');
+                },
+			goToBandRegistration: function(){
+                this.showNavigation = false;
+                    //this.$refs.sidebar.toggle();
+                    router.push('bandRegistration');
                 }
+			
         }
             
       }).$mount('#app');
     
     //router.push('settings');
-    router.push({ name: 'settings'})
+    router.push({ name: 'indice'})
 }
+
+
+
 
         
 

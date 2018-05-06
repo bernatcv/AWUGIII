@@ -2,14 +2,10 @@
 /* CSS Document */
 
 
-
-.phone-viewport {
-  width: 100%;
-  display: inline-flex;
-  align-items: flex-end;
-  overflow: hidden;
-	position:absolute;
-	bottom:0;
+.yAlign{
+	position:fixed;
+    top: 25%;
+	
 }
 
 .badge {
@@ -38,18 +34,146 @@
 
 }
 
+.botton{
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	overflow: hidden;
+	align-items: flex-end;
+	display: inline-flex;
+}
 .band_Description{
 	padding: 10px;
 	
 	
 }
 
-<style lang="scss" scoped>
-  .md-list {
-    width: 320px;
+.md-list {
+    width: 100%;
     max-width: 100%;
     display: inline-block;
     vertical-align: top;
     border: 1px solid rgba(#000, .12);
   }
+
+
+.pulse-on-error > > > .md-duplicated {
+  animation-name: pulse;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+#more_icon{
+	
+	width: 10px;
+	height: 10px;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(0.9, 0.9);
+  }
+}
+
+#card_event{
+	margin-left: 10px;
+	margin-right: 10px;
+	
+}
+
+#logo{
+	width: 25%;
+	margin: auto;
+}
+
+
+<style lang="scss" scoped>
+  .md-list {
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid rgba(#000, .12);
+  }
+
+.page-container {
+  min-height: 300px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.md-drawer {
+  width: 230px;
+  max-width: calc(100vw - 125px);
+}
+
+.md-content {
+  padding: 16px;
+}
+
+
+ .phone-viewport {
+    width: 100%;
+    height: 200px;
+    display: inline-flex;
+    align-items: flex-end;
+    overflow: hidden;
+    border: 1px solid rgba(#000, .26);
+    background: rgba(#000, .06);
+	 
+  }
+.md-card {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+	margin-bottom: 3%;
+  }
+
+
+
+
+  .md-card-example {
+    .md-subhead {
+      .md-icon {
+        $size: 16px;
+
+        width: $size;
+        min-width: $size;
+        height: $size;
+        font-size: $size !important;
+      }
+
+      span {
+        vertical-align: middle;
+      }
+    }
+
+    .card-reservation {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .md-icon {
+        margin: 8px;
+      }
+    }
+
+    .md-button-group {
+      display: flex;
+
+      .md-button {
+        min-width: 60px;
+        border-radius: 2px;
+      }
+    }
+  }
+
 </style>
