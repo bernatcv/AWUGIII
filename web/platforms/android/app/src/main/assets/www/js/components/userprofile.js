@@ -1,6 +1,11 @@
 
 
 const UserProfileTemplate = {props: [],    
+                             
+                                  data: () => ({
+        showNavigation: false,
+        cities: ["New York", "Amsterdam", "Tokyo", "Rome"]
+                            }),
 methods: {
             goToSimpleList(){
                 this.$router.push('simplelist');

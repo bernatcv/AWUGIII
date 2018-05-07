@@ -1,4 +1,12 @@
 const SettingsTemplate = {props: [], 
+                          
+                               data: () => ({
+        showNavigation: false
+                            }),
+                          
+                               data: () => ({
+        showNavigation: false
+                            }),
 			methods: {
             goToSimpleList(){
                 this.$router.push('simplelist');

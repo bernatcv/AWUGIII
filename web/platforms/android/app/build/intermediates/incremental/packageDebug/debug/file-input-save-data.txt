@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon May 07 12:50:24 CEST 2018
+#Mon May 07 13:16:20 CEST 2018
 5.base=C\:\\Users\\eduardouf2\\Documents\\AWUGIII\\web\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 42.base=C\:\\Users\\eduardouf2\\Documents\\AWUGIII\\web\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 32.set=ANDROID_RESOURCE

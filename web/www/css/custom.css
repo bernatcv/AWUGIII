@@ -139,7 +139,18 @@
 	margin-bottom: 3%;
   }
 
+.contenedor1{
+    margin-top: 20%;
+    margin-bottom:20%;
+}
 
+.menu_superior{
+    position: fixed;
+    clear: both;
+    top: 0;
+    z-index: 999;
+
+}
 
 
   .md-card-example {

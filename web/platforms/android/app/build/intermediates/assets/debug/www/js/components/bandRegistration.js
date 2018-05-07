@@ -1,5 +1,9 @@
 const bandRegistrationTemplate = {props: [], 
-						  
+
+                 data: () => ({
+        showNavigation: false,
+        chips: ["Pop", "Rock", "Jazz", "Metal"]
+                            }),
 			methods: {
             goToBandLogin(){
                 this.$router.push('bandLogin');
@@ -25,7 +29,9 @@ const bandRegistrationTemplate = {props: [],
 			  <md-textarea v-model="textarea"></md-textarea>
 			</md-field>
 				<div>
-				<md-chips v-model="fruits" md-placeholder="Add fruit..."></md-chips>
+				<md-chips class="md-primary" v-model="chips" md-placeholder="Añadir género musical">
+      				<div class="md-helper-text">Default</div>
+   				 </md-chips>
 				 </div>
        		<md-field style="margin-bottom: 5px">
 			  <label>Imagen del grupo</label>
