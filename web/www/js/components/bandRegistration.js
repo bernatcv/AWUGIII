@@ -1,5 +1,8 @@
 const bandRegistrationTemplate = {props: [], 
-						  
+
+                 data: () => ({
+        showNavigation: false
+                            }),
 			methods: {
             goToBandLogin(){
                 this.$router.push('bandLogin');

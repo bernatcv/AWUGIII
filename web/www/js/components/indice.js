@@ -1,4 +1,8 @@
 const IndiceTemplate = {props: [], 
+                        
+                             data: () => ({
+        showNavigation: false
+                            }),
 		methods: {
             goToUserLogin(){
                 this.$router.push('userLogin');

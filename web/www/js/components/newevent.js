@@ -1,5 +1,9 @@
 
 const NewEventTemplate = {props: [], 
+                          
+                               data: () => ({
+        showNavigation: false
+                            }),
            methods: {
             goToSimpleList(){
                 this.$router.push('simplelist');

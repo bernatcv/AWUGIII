@@ -1,4 +1,8 @@
 const userLoginTemplate = {props: [], 
+                           
+                                data: () => ({
+        showNavigation: false
+                            }),
         methods: {
             goToUserRegistration(){
                 this.$router.push('userRegistration');

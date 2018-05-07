@@ -1,5 +1,8 @@
 
-const SimpleListTemplate = {props: [], 
+const SimpleListTemplate = {props: [],
+                            data: () => ({
+        showNavigation: false
+                            }),
           methods: {
             goToSimpleList(){
                 this.$router.push('simplelist');
@@ -28,7 +31,7 @@ const SimpleListTemplate = {props: [],
 						<md-icon>more_vert</md-icon>
 					</md-button>
 				</md-toolbar>
-              	<md-drawer class="md-right" :md-active.sync="showNavigation" ref="sidebar"> <!-- inicio panel lateral-->
+            <md-drawer class="md-right" :md-active.sync="showNavigation" ref="sidebar"> <!-- inicio panel lateral-->
              	<md-toolbar class="md-primary" md-elevation="0">
                 	<span class="md-title">Ajustes</span>
               	</md-toolbar>
