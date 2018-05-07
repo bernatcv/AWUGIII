@@ -3,7 +3,8 @@
 const UserProfileTemplate = {props: [],    
                              
                                   data: () => ({
-        showNavigation: false
+        showNavigation: false,
+        cities: ["New York", "Amsterdam", "Tokyo", "Rome"]
                             }),
 methods: {
             goToSimpleList(){

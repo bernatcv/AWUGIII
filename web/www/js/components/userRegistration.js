@@ -1,6 +1,7 @@
 const userRegistrationTemplate = {props: [], 
 						       data: () => ({
-        showNavigation: false
+        showNavigation: false,
+        chips: ["Pop", "Rock", "Jazz", "Metal"]
                             }),
 			methods: {
             goToUserLogin(){
@@ -44,7 +45,7 @@ const userRegistrationTemplate = {props: [],
 				  <md-input v-model="password" type="password" required></md-input>
 				</md-field>
       			
-      			<md-chips class="md-primary" v-model="chips" md-placeholder="Add genre...">
+      			<md-chips class="md-primary" v-model="chips" md-placeholder="Añadir género musical">
       				<div class="md-helper-text">Default</div>
    				 </md-chips>
        			
