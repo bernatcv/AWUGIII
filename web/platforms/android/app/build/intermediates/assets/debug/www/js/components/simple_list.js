@@ -23,6 +23,7 @@ const SimpleListTemplate = {props: [],
         template:`
 
 <div>
+<div class="menu_superior">
 				<md-toolbar class="md-primary"> <!-- inicio toolbar de la app-->
 					<div id="logo">
 						<img src="img/logo.png" style="flex: 1">
@@ -48,11 +49,12 @@ const SimpleListTemplate = {props: [],
                 	</md-list-item>
               </md-list>
         </md-drawer> <!-- fin panel lateral-->
+</div>
  
-        <!-- ---------------------CONTENIDO-------------------------- -->
+        <!-- ---------------------CONTENIDO------------s-------------- -->
 
 
-					<div>
+					<div class="contenedor1">
 
 					   <md-list-item>
 								<md-avatar class="md-large">

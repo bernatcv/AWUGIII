@@ -29,6 +29,7 @@ const SettingsTemplate = {props: [],
         template:`
 
 <div>
+<div class="menu_superior">
 				<md-toolbar class="md-primary"> <!-- inicio toolbar de la app-->
 					<div id="logo">
 						<img src="img/logo.png" style="flex: 1">
@@ -37,7 +38,7 @@ const SettingsTemplate = {props: [],
 						<md-icon>more_vert</md-icon>
 					</md-button>
 				</md-toolbar>
-              	<md-drawer class="md-right" :md-active.sync="showNavigation" ref="sidebar"> <!-- inicio panel lateral-->
+            <md-drawer class="md-right" :md-active.sync="showNavigation" ref="sidebar"> <!-- inicio panel lateral-->
              	<md-toolbar class="md-primary" md-elevation="0">
                 	<span class="md-title">Ajustes</span>
               	</md-toolbar>
@@ -54,10 +55,11 @@ const SettingsTemplate = {props: [],
                 	</md-list-item>
               </md-list>
         </md-drawer> <!-- fin panel lateral-->
+</div>
  
-        <!-- ---------------------CONTENIDO-------------------------- -->
+        <!-- ---------------------CONTENIDO------------s-------------- -->
 
-<div>
+<div class="contenedor1">
  <md-list class="md-triple-line"><md-field md-inline>
       <label>Inline</label>
       <md-input v-model="inline"></md-input>

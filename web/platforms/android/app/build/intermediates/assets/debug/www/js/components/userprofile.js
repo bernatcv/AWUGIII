@@ -32,6 +32,7 @@ methods: {
   
         template:`
 <div>
+<div class="menu_superior">
 				<md-toolbar class="md-primary"> <!-- inicio toolbar de la app-->
 					<div id="logo">
 						<img src="img/logo.png" style="flex: 1">
@@ -40,12 +41,12 @@ methods: {
 						<md-icon>more_vert</md-icon>
 					</md-button>
 				</md-toolbar>
-              	<md-drawer class="md-right" :md-active.sync="showNavigation" ref="sidebar"> <!-- inicio panel lateral-->
+            <md-drawer class="md-right" :md-active.sync="showNavigation" ref="sidebar"> <!-- inicio panel lateral-->
              	<md-toolbar class="md-primary" md-elevation="0">
                 	<span class="md-title">Ajustes</span>
               	</md-toolbar>
               	<md-list>
-                	<md-list-item v-on:click="goToEditProfile()">
+                	<md-list-item @click="goToEditProfile()">
                   		<md-icon>edit</md-icon>
                   		<span class="md-list-item-text">Editar perfil</span>
                 	</md-list-item>
@@ -57,11 +58,12 @@ methods: {
                 	</md-list-item>
               </md-list>
         </md-drawer> <!-- fin panel lateral-->
+</div>
  
-        <!-- ---------------------CONTENIDO-------------------------- -->
+        <!-- ---------------------CONTENIDO------------s-------------- -->
 
 
-<div>
+<div class="contenedor1">
 <md-card>
       <md-card-media-cover md-solid>
         <md-card-media md-ratio="4:3">
