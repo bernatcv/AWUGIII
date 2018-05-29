@@ -1,11 +1,29 @@
-const SettingsTemplate = {props: [], 
-                          
-                               data: () => ({
-        showNavigation: false
-                            }),
-                          
-                               data: () => ({
-        showNavigation: false
+
+var busquedaJson = [
+    {titulo: "ACDC", descripcion: "AC/DC es un grupo de hard rock australiano formado en 1973 en Sídney, Australia, por los hermanos de origen escocés Malcolm y Angus Young.", imagen: "img/BAND_IMG/acdc.jpg"},
+	{titulo: "The Beatles", descripcion: "The Beatles fue una banda de pop/rock inglesa activa durante la década de 1960, y reconocida como la más exitosa comercialmente y la más alabada por la crítica en la historia de la música popular.", imagen: "img/BAND_IMG/beatles.jpg"},
+	{titulo: "Extremoduro", descripcion: "Extremoduro es un grupo español de rock fundado por Roberto Iniesta en la ciudad extremeña de Plasencia en 1987.", imagen: "img/BAND_IMG/extremoduro+.jpg"},
+	{titulo: "Green Day", descripcion: "Green Day es una banda estadounidense de pop punk y punk rock integrada inicialmente por tres miembros: Billie Joe Armstrong (guitarra y voz), Mike Dirnt (bajo y coros) y Tré Cool (batería y coros).", imagen: "img/BAND_IMG/greenday.jpg"},
+	{titulo: "Guns And Roses", descripcion: "Guns N' Roses es una banda estadounidense de hard rock formada en Hollywood (Los Ángeles, California) en 1985. El grupo fue fundado por Axl Rose y el guitarrista rítmico Izzy Stradlin.", imagen: "img/BAND_IMG/guns_roses.jpg"},
+	{titulo: "Iron Maiden", descripcion: "Iron Maiden es una banda británica de heavy metal, fundada en 1975 por el bajista Steve Harris. ", imagen: "img/BAND_IMG/iron_maiden.jpg"},
+	{titulo: "Nirvana", descripcion: "Nirvana fue una banda de grunge estadounidense procedente de Aberdeen, Washington, Estados Unidos integrada por el vocalista y guitarrista Kurt Cobain y el bajista Krist Novoselic en 1987. ", imagen: "img/BAND_IMG/nirvana.jpg"},
+	{titulo: "Pink Floyd", descripcion: "Pink Floyd fue una banda de rock británica, considerada un icono cultural del siglo xx y una de las bandas más influyentes en la historia de la música, que obtuvo gran popularidad gracias a su música psicodélica que evolucionó hacia el rock progresivo y rock sinfónico con el paso del tiempo. ", imagen: "img/BAND_IMG/pink_floyd.jpg"},
+	{titulo: "The Rolling Stones", descripcion: "The Rolling Stones es una banda británica de rock originaria de Londres.", imagen: "img/BAND_IMG/rollingstones.jpg"},
+	{titulo: "U2", descripcion: "U2 es una banda de rock originaria de Dublín (Irlanda), formada en 1976 por Bono (voz), The Edge (guitarra, teclado y voz), Adam Clayton (bajo), y Larry Mullen Jr. (batería).", imagen: "img/BAND_IMG/u2.jpg"},
+	
+   
+];
+
+
+
+const SettingsTemplate = {props: [],
+        created: function(){
+            this.busquedas = busquedaJson;
+            
+        },
+        data: () => ({
+                showNavigation: false,
+                busquedas: [{titulo: "", descripcion: "", imagen: "", direccion: ""}]
                             }),
 			methods: {
             goToSimpleList(){
@@ -60,6 +78,7 @@ const SettingsTemplate = {props: [],
         <!-- ---------------------CONTENIDO------------s-------------- -->
 
 <div class="contenedor1">
+
  <md-list class="md-triple-line"><md-field md-inline>
       <label>Inline</label>
       <md-input v-model="inline"></md-input>
@@ -68,43 +87,29 @@ const SettingsTemplate = {props: [],
         	</md-button>
     </md-field>
 
-    
-      <md-list-item>
-        <md-avatar>
-          <img src="img/user1.jpg" alt="People">
-        </md-avatar>
+    <div class="groups">
+		<div class="group" v-for="grupo in busquedas">
+		  <md-list-item>
+			<md-avatar>
+			  <img :src="grupo.imagen" alt="People">
+			</md-avatar>
 
-        <div class="md-list-item-text">
-          <span>Ali Connors</span>
-          <span>Brunch this weekend?</span>
-          <p>I'll be in your neighborhood doing errands this week. Do you want to meet?</p>
-        </div>
+			<div class="md-list-item-text">
+			  <span><strong>{{grupo.titulo}}</strong></span>
+			  <p>{{grupo.descripcion}}</p>
+			</div>
 
-        <md-button class="md-icon-button md-list-action">
-          <md-icon class="md-primary">star</md-icon>
-        </md-button>
-      </md-list-item>
+			<md-button class="md-icon-button md-list-action">
+			  <md-icon class="md-primary">star</md-icon>
+			</md-button>
+		  </md-list-item><br>
+		  <md-divider class="md-inset"></md-divider>
+		</div>
+	
+      
 
-      <md-divider class="md-inset"></md-divider>
-
-      <md-list-item>
-        <md-avatar>
-          <img src="img/user1.jpg" alt="People">
-        </md-avatar>
-
-        <div class="md-list-item-text">
-          <span>me, Scott, Jennifer</span>
-          <span>Summer BBQ</span>
-          <p>Wish I could come, but I'm out of town this week. :(</p>
-        </div>
-
-        <md-button class="md-icon-button md-list-action">
-          <md-icon>star_border</md-icon>
-        </md-button>
-      </md-list-item>
-
-      <md-divider class="md-inset"></md-divider>
-
+     
+</div>
 </div>
 
 <!-- ----------------------FIN CONTENIDO--------------------- -->
