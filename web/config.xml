@@ -24,7 +24,7 @@
         <splash density="port-ldpi" src="res/screen/android/splash-port-ldpi.png" />
         <splash density="port-mdpi" src="res/screen/android/splash-port-mdpi.png" />
         <splash density="port-xhdpi" src="res/screen/android/splash-port-xhdpi.png" />
-		<icon src="res/android/icon_720.png" density="xxxhdpi" />
+		<icon src="res/icon/android/icon_720.png" density="xxxhdpi" />
 		
     </platform>
     <platform name="ios">
