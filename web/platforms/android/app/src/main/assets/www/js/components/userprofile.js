@@ -1,12 +1,22 @@
+var profileJson = [
+    {titulo: "Presentación Rock or Bust", fecha: "21/01/2018", direccion: "Carrer de la Igualtat, 33, 08222 Terrassa, Barcelona"},
+	{titulo: "Viejas glorais", fecha: "02/01/2018", direccion: "Plaça Catalunya 1, Barcelona"},
+	{titulo: "Lo mejor de AC/DC", fecha: "04/06/2019", direccion: "Plaza de la Puerta del Sol, Madrid"},
+  
+];
 
-
-const UserProfileTemplate = {props: [],    
-                             
-                                  data: () => ({
-        showNavigation: false,
-        cities: ["New York", "Amsterdam", "Tokyo", "Rome"]
-                            }),
-methods: {
+const UserProfileTemplate = {props: [],
+        created: function(){
+            this.eventos = profileJson;
+            
+        },
+        data: () => ({
+                showNavigation: false,
+				cities: ["Grunge", "Rock", "Alternative"],
+                eventos: [{titulo: "", fecha: "", direccion: ""}]
+			
+                            }),							  
+		methods: {
             goToSimpleList(){
                 this.$router.push('simplelist');
             },
@@ -67,12 +77,12 @@ methods: {
 <md-card>
       <md-card-media-cover md-solid>
         <md-card-media md-ratio="4:3">
-          <img src="img/user1.jpg"  alt="Skyscraper">
+          <img src="img/BAND_IMG/nirvana.jpg" alt="Skyscraper">
         </md-card-media>
 
         <md-card-area>
           <md-card-header>
-            <span class="md-title">BAND NAME</span>
+            <span class="md-title">NIRVANA</span>
             
           </md-card-header>
 
@@ -91,7 +101,7 @@ methods: {
  
 
 
-		<p class="band_Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+		<p class="band_Description">Nirvana fue una banda de grunge estadounidense procedente de Aberdeen, Washington, Estados Unidos integrada por el vocalista y guitarrista Kurt Cobain y el bajista Krist Novoselic en 1987.  </p>
 
 
 <div id="app">
@@ -114,46 +124,24 @@ methods: {
 			
 		
 			
-			
-<md-card>
-      <md-card-header>
-        <md-card-header-text>
-          <div class="md-title">Concierto en Terrassa</div>
-          <div class="md-subhead">21/06/2016</div>
-        </md-card-header-text>
+	<div class="eventosProximos">
+		<md-card v-for="evento in eventos">
+			  <md-card-header>
+				<md-card-header-text>
+				  <div class="md-title">{{evento.titulo}}</div>
+				  <div class="md-subhead">{{evento.fecha}}</div>
+				</md-card-header-text>
+				  <md-button class="md-icon-button" v-on:click="goToEditEvent()">
+					<md-icon>edit</md-icon>
+				  </md-button>
+			  </md-card-header>
+			  <md-card-content>
+				{{evento.direccion}}
+			  </md-card-content>
+    	</md-card>
 
-        
-          <md-button class="md-icon-button" v-on:click="goToEditEvent()">
-            <md-icon>edit</md-icon>
-          </md-button>
-
-      </md-card-header>
-
-      <md-card-content>
-        Carrer de la Igualtat, 33, 08222 Terrassa, Barcelona
-      </md-card-content>
-
-    </md-card>
-
-<md-card>
-      <md-card-header>
-        <md-card-header-text>
-          <div class="md-title">Concierto en Terrassa</div>
-          <div class="md-subhead">21/06/2016</div>
-        </md-card-header-text>
-
-        
-          <md-button class="md-icon-button" v-on:click="goToEditEvent()">
-            <md-icon>edit</md-icon>
-          </md-button>
-
-      </md-card-header>
-
-      <md-card-content>
-        Carrer de la Igualtat, 33, 08222 Terrassa, Barcelona
-      </md-card-content>
-
-    </md-card>
+	</div>		
+	
 
 </div>
   </div>

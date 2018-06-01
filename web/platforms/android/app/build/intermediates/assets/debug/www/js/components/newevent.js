@@ -1,10 +1,37 @@
 
 const NewEventTemplate = {props: [], 
                           
-                               data: () => ({
-        showNavigation: false
-                            }),
+                               data(){
+                                return{
+        showNavigation: false,
+        lat:"",
+        lon:""
+                            }},
            methods: {
+            ubicacio () {
+                navigator.geolocation.getCurrentPosition(this.onSuccess, this.onError);
+                alert("OK");
+            },
+
+            onSuccess (position){
+              alert("TEST");
+                this.lat = position.coords.latitude;
+                this.lon = position.coords.longitude;
+                
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: this.lat, lng: this.lon},
+                    zoom: 14,
+                    disableDefaultUI: true
+                });
+                
+                
+            },
+
+            onError (){
+                alert("fail");
+            },
+
             goToSimpleList(){
                 this.$router.push('simplelist');
             },
@@ -21,7 +48,10 @@ const NewEventTemplate = {props: [],
 			goToIndice(){
                  this.$router.push('indice');
                 }
-        },	                
+        },	  
+        created: function () {
+          this.ubicacio();
+        },              
         template:`
 <div>
 		
@@ -58,7 +88,8 @@ const NewEventTemplate = {props: [],
 				  <md-input v-model="required" required></md-input>  
 				</md-field>
 				
-				<img src="img/mapa.JPG" width="80%" height="80%" style="margin-bottom: 20px">
+        <div id="map" width="80%" height="80%" style="margin-bottom: 20px">
+        </div>    
 				
       			
       			

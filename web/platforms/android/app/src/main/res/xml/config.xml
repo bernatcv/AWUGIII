@@ -11,7 +11,7 @@
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
         <param name="onload" value="true" />
     </feature>
-    <name>AppAwugIII</name>
+    <name>Musicfy G5</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -34,5 +34,6 @@
     <splash density="port-ldpi" src="res/screen/android/splash-port-ldpi.png" />
     <splash density="port-mdpi" src="res/screen/android/splash-port-mdpi.png" />
     <splash density="port-xhdpi" src="res/screen/android/splash-port-xhdpi.png" />
+    <icon density="xxxhdpi" src="res/icon/android/icon_720.png" />
     <preference name="loglevel" value="DEBUG" />
 </widget>

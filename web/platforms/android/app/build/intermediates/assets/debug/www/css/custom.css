@@ -8,6 +8,8 @@
 	
 }
 
+
+
 .badge {
   width: 19px;
   height: 19px;
@@ -144,6 +146,8 @@
     margin-bottom:20%;
 }
 
+
+
 .menu_superior{
     position: fixed;
     clear: both;
@@ -152,7 +156,11 @@
 
 }
 
-
+.group{
+	
+	margin-bottom: 5%;
+	
+}
   .md-card-example {
     .md-subhead {
       .md-icon {
