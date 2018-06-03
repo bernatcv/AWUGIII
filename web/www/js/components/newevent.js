@@ -22,7 +22,7 @@ const NewEventTemplate = {props: [],
               ['Sabadell', 41.546, 2.126],
               ['Cuenca', 40.070, -2.136],
               ['Bilbao', 43.272, -2.941],
-              ['Sevilla', 37.381, -5.971],
+              ['Palma de Mallorca', 39.579, 2.645],
               ['Zaragoza', 41.663, -0.870]
             ];   
                 
@@ -30,7 +30,7 @@ const NewEventTemplate = {props: [],
                     
                 var map = new google.maps.Map(document.getElementById('map'), {
                     center: {lat: this.lat, lng: this.lon},
-                    zoom: 5.2,
+                    zoom: 5,
                      mapTypeId: google.maps.MapTypeId.ROADMAP,
                      styles: [
                         {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -116,7 +116,8 @@ const NewEventTemplate = {props: [],
                 })
     
             var infowindow = new google.maps.InfoWindow();
-
+                
+                
             var marker, i;
 
             for (i = 0; i < locations.length; i++) { 
@@ -128,10 +129,13 @@ const NewEventTemplate = {props: [],
               });
 
               google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                  
                 return function() {
                   infowindow.setContent(locations[i][0]);
                   infowindow.open(map, marker);
                 }
+                
+            
               })(marker, i));
             }
             
