@@ -31,6 +31,7 @@ function init(){
 			,{path: '/bandLogin', name: 'bandLogin', component: bandLoginTemplate }
             ,{path: '/userRegistration', name: 'userRegistration', component: userRegistrationTemplate }
             ,{path: '/bandRegistration', name: 'bandRegistration', component: bandRegistrationTemplate }
+            ,{path: '/map', name: 'map', component: MapTemplate }
             ];
 
         const router = new VueRouter({
@@ -102,8 +103,11 @@ function init(){
                 this.showNavigation = false;
                     //this.$refs.sidebar.toggle();
                     router.push('bandRegistration');
+                },
+            goToMap: function(){
+                this.showNavigation = false;
+                    router.push('map');
                 }
-			
         }
             
       }).$mount('#app');

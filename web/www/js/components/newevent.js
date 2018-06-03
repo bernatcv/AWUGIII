@@ -31,6 +31,7 @@ const NewEventTemplate = {props: [],
             onError (){
                 alert("fail");
             },
+               
 
             goToSimpleList(){
                 this.$router.push('simplelist');
